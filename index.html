@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中央倒计时网页</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        #countdown {
+            font-size: 80px;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="countdown">开始倒计时</div>
+    <script>
+        // 设置倒计时总时长为 120 秒，可以根据需求修改
+        let totalSeconds = 120;
+        const countdownElement = document.getElementById('countdown');
+
+        function updateCountdown() {
+            const minutes = Math.floor(totalSeconds / 60);
+            const seconds = totalSeconds % 60;
+
+            const displayTime = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            countdownElement.textContent = displayTime;
+
+            if (totalSeconds > 0) {
+                totalSeconds--;
+                setTimeout(updateCountdown, 1000);
+            } else {
+                countdownElement.textContent = '倒计时结束';
+            }
+        }
+
+        updateCountdown();
+    </script>
+</body>
+
+</html>

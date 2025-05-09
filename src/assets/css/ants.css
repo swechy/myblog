@@ -1,0 +1,38 @@
+.ant-layout {
+  background-color: var(--contentBgColor);
+}
+.ant-layout-header {
+  color: var(--font-color);
+  background-color: transparent;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  height: 60px;
+  font-size: 1.3em;
+  font-weight: 700;
+  z-index: 2;
+  padding: 0;
+}
+
+.ant-layout-content  {
+  width: 100%;
+  max-width: 1450px;
+  padding: 0 25px;
+  margin: 70px auto 0;
+  overflow: visible;
+  font-size: 1.1em;
+}
+
+.ant-layout-footer  {
+  background: linear-gradient(180deg,var(--card-bg-none) 0,var(--card-bg) 25%);
+  height: auto !important;
+  width: 100%;
+  padding: 0;
+  margin-top: 5rem;
+  font-size: 1.1em;
+}
+.ant-pagination-item-active {
+  background-color: #ffc848 !important;
+}
+.ant-pagination-item-active a {
+  color: #191919 !important;
+}

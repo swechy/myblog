@@ -1,0 +1,26 @@
+.Lucky {
+  background-image: url(../../assets/images/bg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+#number {
+  font-size: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  color: #fdda5a;
+}
+.shuoming {
+  font-size: 1.5em;
+  color: #fdda5a;
+  position: absolute;
+  left: 50%;
+  bottom: 100px;
+  transform: translateX(-50%);
+}

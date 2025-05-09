@@ -1,0 +1,297 @@
+
+.user__card {
+  height: 330px;
+  margin-bottom: 1rem;
+  background: #fed406; // url('../assets/images/pika.jpeg') no-repeat;
+  // background: url('../assets/images/user.jpg') no-repeat;
+  // background: url('../assets/images/annan.webp') no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+  // background: linear-gradient(
+  //   -45deg,
+  //   var(--systemThemeColor),
+  //   #104773,
+  //   #0D2F5A,
+  //   #67044d
+  // );
+  // background-size: 400%;
+  // box-shadow: var(--heo-shadow-black);
+  // animation: gradient 15s ease infinite;
+  position: relative;
+  img {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    width: 110px;
+    z-index: 0;
+  }
+  .user__card__name {
+    height: 100%;
+    // background: rgba(255, 200, 72, 0.3);
+    background: rgba(21, 21, 21, 0.2);
+    position: relative;
+    color: #1b1c20;
+    line-height: 1.5;
+    font-size: 1em;
+    padding: 1.2rem 1.5rem 0rem 1.5rem;
+    b {
+      font-size: 1.1em;
+      color: #1b1c20;
+    }
+    .icon {
+      font-size: 20px;
+      padding: 10px 10px 9.2px 10px;
+      border: 1px solid #1b1c20;
+      background: #1b1c20;
+      border-radius: 50%;
+      line-height: 1;
+      transition: all .3s ease 0s;
+    }
+    .icon:hover {
+      transform: scale(1.1);
+      box-shadow: none;
+      color: #fed406;
+    }
+  }
+}
+.ad__card {
+  height: 330px;
+  margin-bottom: 1rem;
+  background: url('../../assets/images/annan.webp') no-repeat;
+  background-size: 100%;
+  .user__card__name {
+    color: #ddd;
+    line-height: 1.5;
+    font-size: 1em;
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+    b {
+      font-size: 1.1em;
+      color: #fff;
+    }
+  }
+}
+.aside__fixed {
+  position: sticky;
+  top: calc(60px + 0.5em);
+}
+.qq__card {
+  border: none !important;
+  height: 100px;
+  margin-bottom: 1rem;
+  background-size: 100%;
+  position: relative;
+  .qq__card__name {
+    // background-image: #57bd6a;
+    background: #57bd6a;
+    color: #ddd;
+    line-height: 1.5;
+    font-size: 1em;
+    padding: 0.7rem 1.5rem 1.5rem 1.5rem;
+    // padding-bottom: 5rem;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    i {
+      transform: translate(0, 100%) scale(5) rotate(15deg);
+      opacity: 0.4;
+      transition: all 1.5s;
+      font-size: 1.5em;
+      position: absolute;
+      right: 1.5em;
+      top: 1em;
+    }
+    font {
+      letter-spacing: 1px;
+      font-size: 14px;
+      font-weight: 700;
+      display: block;
+    }
+    b {
+      letter-spacing: 1px;
+      font-size: 2em;
+      color: #fff;
+    }
+    b::after {
+      content: "B站";
+      color: #57bd6a;
+      background: #fff;
+      padding: 0px 3px;
+      font-size: 12px;
+      position: relative;
+      bottom: 0.7rem;
+      left: 8px;
+      border-radius: 2px;
+      display: inline-block;
+      height: 20px;
+      line-height: 20px;
+      letter-spacing: 0px;
+    }
+  }
+  .qq__card__code {
+    z-index: -1;
+    background: #57bd6a;
+    width: 100%;
+    color: #ddd;
+    line-height: 1.5;
+    font-size: 1em;
+    padding: 0.7rem 1.5rem 1.5rem 1.5rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: rotateY(180deg);
+    img {
+      padding: 0.3rem;
+      background: #fff;
+      border-radius: 8px;
+      width: 5.2rem;
+      position: absolute;
+      right: 1.5rem;
+      top: 0.5rem;
+    }
+    font {
+      display: block;
+      font-size: 14px;
+      font-weight: 700;
+    }
+  }
+}
+// .front{
+//   transform:rotateY(180deg);
+//   }
+// .qq__card:hover {
+//   .qq__card__name {
+//     transform: rotateY(180deg);
+//     transition: all 1s;
+//     .qq__card__code {
+//       display: block;
+//       z-index: 1;
+//     }
+//   }
+//   i {
+//     opacity: 0;
+//   }
+// }
+.qq__card__name {
+  transition: transform 1s ease-in-out;
+  transform-origin: center center;
+}
+
+.qq__card__code {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.qq__card:hover .qq__card__name {
+  animation: rotateAndFadeOut 1s forwards;
+}
+
+.qq__card:hover .qq__card__code {
+  z-index: 1;
+  animation: fadeIn 0.5s forwards 0.5s; /* 延迟0.5秒开始，持续0.5秒 */
+}
+
+@keyframes rotateAndFadeOut {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(90deg);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.webinfo-item-title {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  i {
+    font-size: 16px;
+    width: 16px;
+    margin-right: 6px;
+    line-height: 2;
+  }
+}
+
+.menu-title-box {
+  h3 {
+    i {
+      position: relative;
+      top: 1px;
+    }
+    margin-bottom: 10px;
+  }
+}
+.menu-title-box-flex {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0 0;
+}
+.menu-title-box-index {
+  background: var(--contentBgColor);
+  border: var(--style-border);
+  color: var(--text-color);
+  border-radius: 8px;
+  margin-right: 4px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  margin-top: 2px;
+}
+.menu-title-box-t {
+  width: calc(100% - 30px);
+  font-weight: 500;
+  padding: 0 6px;
+  font-size: 15px;
+}
+.menu-title-box-t:hover {
+  cursor: pointer;
+  color: var(--yellow);
+  transform: scale(1.05);
+  transition: .5s all;
+}
+.menu-title {
+  padding-left: .3rem;
+  transition: all .2s ease-in-out 0s;
+  line-height: 24px;
+  padding: 8px;
+  border-radius: 8px;
+  color: var(--text-color);
+  cursor: default;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.1em;
+  opacity: .8;
+  filter: blur(0.8px);
+}
+.menu-title:hover {
+  color: var(--yellow);
+  background: #98a2a90d;
+  font-size: 1.1em;
+  opacity: 1;
+  filter: blur(0);
+}
+.menu-title.active {
+  color: var(--yellow);
+  font-size: 1.3em;
+  font-weight: 700;
+  filter: blur(0) !important;
+  opacity: 1;
+}
