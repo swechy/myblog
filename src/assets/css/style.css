@@ -447,7 +447,7 @@
 }
 
 /* Here we go, transition the scene colors on :hover, using the CSS vars to reset the colors for every one that gets a transition */
-.transition-scene:hover {
+.transition-moon {
   /* recolor me tonight */
   --circle-bg-color: hsl(253, 36%, 51%);
   --cactus-body-color: hsl(282, 43%, 26%);
@@ -460,12 +460,12 @@
   /* stars transition */
 }
 
-.transition-scene:hover .color-fade-transition {
+.transition-moon .color-fade-transition {
   -webkit-transition: fill var(--t-fast) ease-in-out var(--t-delay-colorfades);
   transition: fill var(--t-fast) ease-in-out var(--t-delay-colorfades);
 }
 
-.transition-scene:hover .star {
+.transition-moon .star {
   opacity: 1;
 }
 
@@ -497,17 +497,17 @@
     transition: all var(--t-fast) cubic-bezier(0.55, 0.055, 0.675, 0.19);
   }
 
-  .transition-scene:hover {
+  .transition-moon {
     /* the motion path transitions */
   }
 
-  .transition-scene:hover .sun {
+  .transition-moon .sun {
     offset-distance: 43%;
     -webkit-transition: offset-distance var(--t-fast) cubic-bezier(0.55, 0.055, 0.675, 0.19);
     transition: offset-distance var(--t-fast) cubic-bezier(0.55, 0.055, 0.675, 0.19);
   }
 
-  .transition-scene:hover .cloud {
+  .transition-moon .cloud {
     -webkit-transform: translateX(250px);
     transform: translateX(250px);
     -webkit-transition: -webkit-transform var(--t-fast) cubic-bezier(0.55, 0.055, 0.675, 0.19);
@@ -516,7 +516,7 @@
     transition: transform var(--t-fast) cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform var(--t-fast) cubic-bezier(0.55, 0.055, 0.675, 0.19);
   }
 
-  .transition-scene:hover .moonlight {
+  .transition-moon .moonlight {
     opacity: 1;
     offset-distance: 39%;
     -webkit-transition: offset-distance var(--t-med) cubic-bezier(0.215, 0.61, 0.355, 1) var(--t-delay-motionpath);
@@ -548,18 +548,18 @@
   }
 
   /* Smooth color transition */
-  .transition-scene:hover .sun,
-  .transition-scene:hover .cloud {
+  .transition-moon .sun,
+  .transition-moon .cloud {
     opacity: 0;
   }
 
-  .transition-scene:hover .sun,
-  .transition-scene:hover .cloud {
+  .transition-moon .sun,
+  .transition-moon .cloud {
     -webkit-transition: opacity var(--t-fast) linear;
     transition: opacity var(--t-fast) linear;
   }
 
-  .transition-scene:hover .moonlight {
+  .transition-moon .moonlight {
     opacity: 1;
     -webkit-transition: opacity var(--t-slow) linear var(--t-delay-motionpath);
     transition: opacity var(--t-slow) linear var(--t-delay-motionpath);
@@ -589,18 +589,18 @@
   }
 
   /* Smooth color transition */
-  .transition-scene:hover .sun,
-  .transition-scene:hover .cloud {
+  .transition-moon .sun,
+  .transition-moon .cloud {
     opacity: 0;
   }
 
-  .transition-scene:hover .sun,
-  .transition-scene:hover .cloud {
+  .transition-moon .sun,
+  .transition-moon .cloud {
     -webkit-transition: opacity var(--t-fast) linear;
     transition: opacity var(--t-fast) linear;
   }
 
-  .transition-scene:hover .moonlight {
+  .transition-moon .moonlight {
     opacity: 1;
     -webkit-transition: opacity var(--t-slow) linear var(--t-delay-motionpath);
     transition: opacity var(--t-slow) linear var(--t-delay-motionpath);

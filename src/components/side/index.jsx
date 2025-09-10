@@ -90,7 +90,7 @@ function Side({ cats, tags, total, menu, article }) {
           </div>
           <div className="flex">
             <div>
-              <a href="https://space.bilibili.com/2861496" target="_blank">
+              <a href="https://space.bilibili.com/2861496" target="_blank" rel="noreferrer">
                 <i title="mail" className="icon fa-brands fa-bilibili"></i>
               </a>
             </div>
@@ -108,7 +108,7 @@ function Side({ cats, tags, total, menu, article }) {
       <div className="el-card qq__card flip">
         <div className="qq__card__name">
           <b>关注阿洋</b>
-          <i className="iconfont icon-qq"></i>
+          <i className="fa-brands fa-bilibili"></i>
           <font color="#fff"> 一起分享学习的快乐 </font>
           <div className="qq__card__code">
             <b>扫一扫</b>
@@ -155,6 +155,17 @@ function Side({ cats, tags, total, menu, article }) {
                 ))}
             </div>
           )}
+        </div>
+        <div className="el-card ad-button" onClick={() => {
+          window.open("https://u.jd.com/S6UQIiT");
+        }}>
+          <div>
+            <img src="static/images/qimingx.png" alt="qimingx" />
+          </div>
+          <div>
+            <div class="ad-button-title">盖世小鸡启明星2无线手柄</div>
+            <div class="ad-button-desc">"小孩"代言，百元格斗标杆，立享优惠</div>
+          </div>
         </div>
         <div className="el-card">
           {menu && (

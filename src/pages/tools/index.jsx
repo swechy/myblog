@@ -212,7 +212,7 @@ function Tools(params) {
             {item.child.map((child, index) => (
               <a
                 href={child.url}
-                target="_blank"
+                target="_blank" rel="noreferrer"
                 key={index}
                 className="el-card tools__list"
               >

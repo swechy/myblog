@@ -82,7 +82,7 @@
   position: relative;
   .qq__card__name {
     // background-image: #57bd6a;
-    background: #57bd6a;
+    background: #FF6699;
     color: #ddd;
     line-height: 1.5;
     font-size: 1em;
@@ -113,7 +113,7 @@
     }
     b::after {
       content: "B站";
-      color: #57bd6a;
+      color: #FF6699;
       background: #fff;
       padding: 0px 3px;
       font-size: 12px;
@@ -129,7 +129,7 @@
   }
   .qq__card__code {
     z-index: -1;
-    background: #57bd6a;
+    background: #FF6699;
     width: 100%;
     color: #ddd;
     line-height: 1.5;
@@ -294,4 +294,57 @@
   font-weight: 700;
   filter: blur(0) !important;
   opacity: 1;
+}
+
+
+.ad-button {
+  position: relative;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 12px 10px 16px;
+  overflow: visible;
+  border-style: dashed;
+}
+
+.ad-button:hover {
+  cursor: pointer;
+  border-color: var(--color-red);
+  transition: all .3s;
+  cursor: pointer;
+  background: var(--color-red-trans);
+}
+
+.ad-button::after {
+  content: "ad";
+  position: absolute;
+  background: #d4d4d4;
+  color: #737373;
+  top: -8px;
+  right: 12px;
+  padding: 0 3px;
+  border-radius: 4px;
+  font-size: 10px;
+}
+
+.ad-button img {
+  height: 50px;
+  margin-right: 8px;
+  margin-top: 3px;
+}
+
+.ad-button-title {
+  font-size: 14px;
+  font-weight: 700;
+  text-align: left;
+  color: var(--text-color);
+  line-height: 2;
+}
+
+.ad-button-desc {
+  font-size: 12px;
+  color: var(--text-color-light);
+  text-align: left;
 }

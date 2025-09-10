@@ -179,7 +179,7 @@ const App = () => {
                   }>
                   <div className="menu__list">文库</div>
                 </Popover >
-                <Link to="/gamepad" className="menu__list">测试</Link>
+                {/* <Link to="/gamepad" className="menu__list">测试</Link> */}
                 <Popover 
                   placement="bottom"
                   trigger="hover"
@@ -271,7 +271,7 @@ const App = () => {
             <div className="footer">
               <div className="footer__flex">
                 <div>© 2020 - 2022 By<Link className="menu__list" to="/about">洋记严选</Link></div>
-                {/*  UI By <a className="menu__list" href="https://blog.zhheo.com/" target="_blank" rel="noopener noreferrer">张洪Heo</a> */}
+                {/*  UI By <a className="menu__list" href="https://blog.zhheo.com/" target="_blank" rel="noreferrer" rel="noopener noreferrer">张洪Heo</a> */}
                 <div>
                   <Link to="/about#tcomment" className="menu__list">留言</Link>
                   <Link to="/copyright" className="menu__list">协议</Link>

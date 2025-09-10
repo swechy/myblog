@@ -39,7 +39,7 @@ function About() {
               >
                 我是 洋记严选
               </div>
-              一名项目经理、程序员、数码博主
+              一名产品经理、程序员、数码博主
             </div>
           </div>
         </div>
@@ -92,16 +92,14 @@ function About() {
                 在
                 <a
                   href="https://www.16personalities.com/"
-                  target="_blank"
-                  rel="noopener nofollow"
+                  target="_blank" rel="noreferrer"
                 >
                   16personalities
                 </a>
                 了解更多关于
                 <a
                   href="https://www.16personalities.com/ch/intj-%E4%BA%BA%E6%A0%BC"
-                  target="_blank"
-                  rel="noopener nofollow"
+                  target="_blank" rel="noreferrer"
                 >
                   建筑师
                 </a>
@@ -122,7 +120,7 @@ function About() {
           <div className="el-card flex zhiye__card">
             <div style={{ color: "#0ecffe" }}>1997</div>
             <div style={{ color: "#c69043" }}>计算机科学与技术</div>
-            <div style={{ color: "#b04fe6" }}>项目 / 前端</div>
+            <div style={{ color: "#b04fe6" }}>产品 / 前端</div>
           </div>
         </div>
       </div>
@@ -234,7 +232,7 @@ function About() {
                 </span>
                 <a
                   href="https://music.163.com/#/user?id=338860464"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                 >
                   <i className="fa-solid fa-rocket"></i> 立即前往
                 </a>

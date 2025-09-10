@@ -305,9 +305,9 @@ function Post(params) {
               <div className="comment__box">
                 <i className="fas fa-message fa-fw"></i> 评论
               </div>
-              <div id="tcomment">
-                <MyGiscus />
-              </div>
+              {/* <div id="tcomment"> */}
+              <MyGiscus />
+              {/* </div> */}
             </div>
           </div>
           <Side cats={cats} tags={tags} total={total} menu={menu} />
